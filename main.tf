@@ -18,6 +18,7 @@ provider "aws" {
 
 resource "random_string" "bucket_suffix" {
   length  = 8
+  upper   = false
   special = false
 }
 
