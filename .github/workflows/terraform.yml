@@ -80,7 +80,7 @@ jobs:
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform validate
+      run: terraform fmt -check
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
